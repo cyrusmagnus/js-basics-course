@@ -40,6 +40,11 @@ const sort = (array, sortOrder = 'increasing') => {
 // The second implementation, if only for numbers
 const sortTwo = (array, sortOrder = 'increasing') => {
     let count = 0;
+    /*
+        Тут один цикл обходит массив и на каждой итерации делает проверку каждого числа
+        со следующим числом, если условие выполняется, то чмсла меняются местами
+        и счетчик итераций уменьшается на единицу
+     */
     if (!sortOrder === 'increasing'){
         while (count < array.length) {
             if (array[count] < array[count + 1]) {
