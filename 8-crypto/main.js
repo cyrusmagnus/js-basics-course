@@ -1,7 +1,7 @@
 const pass = 'qwerty-123';
 const getCryptPass = (pass) => {
     const array = Array.from(pass);
-    // просто меняем соседние элементы местами || just swap the neighboring elements in places
+    // просто меняем соседние элементы местами
     for (let i = 1; i < array.length; i += 2){
 
     }
@@ -11,7 +11,7 @@ const cryptPass = getCryptPass(pass)
 console.log(cryptPass)
 const checkPass = (cryptPass, pass) => {
     const array = Array.from(cryptPass);
-    // просто повторяем операцию || just repeat the operation
+    // просто повторяем операцию
     for (let i = 1; i < array.length; i += 2){
         [ array[i], array[i - 1] ] = [ array[i - 1], array[i] ];
     }

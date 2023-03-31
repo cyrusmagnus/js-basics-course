@@ -1,6 +1,5 @@
 const array = [1, 9, 54, 224, 6, 0];
 // Проверка через switch на случай,если будет необходимсоть расширить до сортировки строковых массивов
-// Checking via switch in case there is a need to expand to sorting string arrays
 const sort = (array, sortOrder = 'increasing') => {
     switch (true) {
         /*
@@ -37,7 +36,6 @@ const sort = (array, sortOrder = 'increasing') => {
     }
 };
 // Вторая реадизация, если только для чисел
-// The second implementation, if only for numbers
 const sortTwo = (array, sortOrder = 'increasing') => {
     let count = 0;
     /*
